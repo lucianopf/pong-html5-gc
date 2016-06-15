@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>three.js - PONG</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				background-color: black;
+			}
+			#gameCanvas {
+				background-color: black;
+				width: 640px;
+				height: 360px;
+				margin: auto;
+				align: center;
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+			}
+			#title {
+				background-color: white;
+				color: black;
+			}
+		</style>
+	</head>
+	<body onload='init();'>
+	    <div id='gameCanvas'></div>
+	    <script src="../build/three.js"></script>
+	    <script src='../build/three.min.js'></script>
+		<script src='./js/controls/keyboard.js'></script>
+		<script src='./js/game.js'></script>
+
+		<div id='scoreboard'>
+			<h1 id='scores'>0-0</h1>
+			<h1 id='title'>3D PONG</h1>
+			<h2 id='winnerBoard'>First to 7 wins!</h2>
+			<h3>A - move left
+			<br>D - move right</h3>
+		</div>
+	</body>
+</html>
